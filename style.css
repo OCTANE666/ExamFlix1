@@ -124,6 +124,7 @@
   }
   
   
+  
   /* FOOTER */
   footer {
     padding: 20px;
@@ -216,15 +217,17 @@
     .box {
       display: grid;
       grid-gap: 20px;
-      grid-template-columns: repeat(1, 1fr);
-      text-align: center;    
+      grid-template-columns: repeat(5, minmax(240px, 1fr));
+      text-align: center;
+      overflow-x: scroll;
+      overflow-y: hidden;    
     }
   
     .box a:hover {
       transition: transform .3s;
       -ms-transform: scale(1);
       -webkit-transform: scale(1);  
-      transform: scale(1.2);
+      transform: scale(1);
     }
   
     .logos {
